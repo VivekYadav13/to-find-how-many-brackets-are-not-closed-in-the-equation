@@ -1,0 +1,17 @@
+str=input('Enter equation:')
+opn=0
+close=0
+for i in range(len(str)):
+    if str[i]=='(':
+        opn+=1
+        
+    elif str[i]==')':
+        close+=1
+        
+print('No. of open brackets is',opn)
+print('No. of close brackets is', close)
+if opn==close:
+        print('all parenthesis are opened and closed')
+else:
+    print('brackets are not closed')
+    print('no. of brackets not closed',opn-close)
